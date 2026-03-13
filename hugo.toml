@@ -1,9 +1,48 @@
-title = 'Example Docs'
-baseURL = 'http://localhost:1314/'
-disableKinds = ['taxonomy', 'term']
+title = "docs.danhill.us"
+baseURL = "http://localhost:1314/"
+disableKinds = ["taxonomy", "term"]
 
 [module]
-workspace = 'off'
+workspace = "off"
 
 [[module.imports]]
-path = 'github.com/dan-hill/site-base'
+path = "github.com/dan-hill/site-base"
+
+[params]
+description = "Living docs, notes, and project records."
+
+[params.ox]
+mode = "directory"
+
+  [params.ox.hero]
+  eyebrow = "living directory"
+  title = "docs.danhill.us"
+  description = "Working documentation, project notes, reference pages, and change records."
+
+[[menu.main]]
+name = "Index"
+url = "/"
+weight = 10
+  [menu.main.params]
+  note = "Top-level docs directory."
+
+[[menu.main]]
+name = "Getting Started"
+url = "/getting-started/"
+weight = 20
+  [menu.main.params]
+  note = "Entry point and baseline conventions."
+
+[[menu.main]]
+name = "Release Notes"
+url = "/posts/release-notes/"
+weight = 30
+  [menu.main.params]
+  note = "Change log and running updates."
+
+[[menu.main]]
+name = "Site"
+url = "https://danhill.us/"
+weight = 40
+  [menu.main.params]
+  note = "Back to the landing node."
