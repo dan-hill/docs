@@ -1,11 +1,16 @@
 {{ define "main" }}
-<article>
-  <header>
-    <h1>{{ .Title }}</h1>
-    <p><strong>DOCS LOCAL OVERRIDE ACTIVE</strong></p>
-  </header>
-  <div>
-    {{ .Content }}
+  <div class="ox-page-grid">
+    <article class="ox-stack">
+      <header class="ox-panel u-panel-pad ox-stack">
+        {{ with .Section }}<p class="ox-card__eyebrow">{{ . }}</p>{{ end }}
+        <h1>{{ .Title }}</h1>
+        <p><strong>DOCS LOCAL OVERRIDE ACTIVE</strong></p>
+        {{ partial "meta.html" . }}
+      </header>
+      <section class="ox-panel ox-content">
+        {{ .Content }}
+      </section>
+    </article>
+    {{ partial "toc.html" . }}
   </div>
-</article>
 {{ end }}
