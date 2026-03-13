@@ -1,0 +1,8 @@
+#+hugo_base_dir: ../
+#+hugo_section: posts
+
+* Release Notes
+:PROPERTIES:
+:EXPORT_FILE_NAME: release-notes
+:END:
+This is the sample post for the docs site.

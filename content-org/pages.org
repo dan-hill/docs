@@ -1,0 +1,8 @@
+#+hugo_base_dir: ../
+
+* Getting Started
+:PROPERTIES:
+:EXPORT_FILE_NAME: getting-started
+:EXPORT_HUGO_SECTION: /
+:END:
+This is the sample regular page for the docs site.
