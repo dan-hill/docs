@@ -13,11 +13,21 @@ description = "Living docs, notes, and project records."
 
 [params.ox]
 mode = "directory"
-
-  [params.ox.hero]
-  eyebrow = "living directory"
-  title = "docs.danhill.us"
-  description = "Working documentation, project notes, reference pages, and change records."
+tagline = "MANPAGE STACK / OPS NOTES / FIELD MANUAL"
+footer_line = "PUBLISHED WITH HUGO // ORG -> OX-HUGO // NODE -> DOCS.DANHILL.US"
+masthead_ascii = [
+  '    ____  ____  ________   _____  __  ____  ____  ____',
+  '   / __ \/ __ \/ ____/ /  / ___/ / / / __ \/ __ \/ __/',
+  '  / / / / /_/ / /   / /   \__ \/ /_/ / /_/ / /_/ /\__ \',
+  ' /_/ /_/\____/_/   /_/   /____/\____/\____/\____/____/',
+  ' [ OPS MANUAL // NOTES STACK // FIELD GUIDE ]',
+]
+masthead_ascii_compact = ["[ DOCS :: FIELD MANUAL ]"]
+landing_routes = [
+  { label = "GETTING STARTED", url = "/getting-started/", note = "Cold-start instructions and baseline conventions." },
+  { label = "POSTS", url = "/posts/", note = "Change records, release notes, and maintenance dispatches." },
+  { label = "SITE", url = "https://danhill.us/", note = "Return to the public signal board." },
+]
 
 [[menu.main]]
 name = "Index"
